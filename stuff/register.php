@@ -4,7 +4,7 @@ session_start();
 
 if(isset($_SESSION['login'])){
 if($_SESSION['login']==true){// check if user is logged
-header("location:../index.php");
+
 }else{
  // keep the flow
 }
@@ -96,6 +96,42 @@ header("location:../index.php");
         <i class="material-icons prefix">https</i>
         <input id="password" name="password" type="password" class="validate black-text">
         <label for="password">Password</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">border_color</i>
+        <input id="lname" name="lname" type="text" class="validate black-text">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="input-field col s6">
+        <i class="material-icons prefix">border_color</i>
+        <input id="mname" name="mname" type="text" class="validate black-text">
+        <label for="mname">Middle Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">border_color</i>
+        <input id="fname" name="fname" type="text" class="validate black-text">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="input-field col s6">
+        <i class="material-icons prefix">business_center</i>
+        <input id="job" name="job" type="text" class="validate black-text">
+        <label for="job">Job</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <i class="material-icons prefix">call_end</i>
+        <input id="phone" name="phone" type="text" class="validate black-text">
+        <label for="phone">Phone Number</label>
+      </div>
+      <div class="input-field col s6">
+        <i class="material-icons prefix">add_location</i>
+        <input id="address" name="address" type="text" class="validate black-text">
+        <label for="address">Address</label>
       </div>
     </div>
     <div onclick="loading()">
