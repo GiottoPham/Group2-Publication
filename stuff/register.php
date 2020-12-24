@@ -134,6 +134,26 @@ if($_SESSION['login']==true){// check if user is logged
         <label for="address">Address</label>
       </div>
     </div>
+    <div class="row">
+    <div class="col s4">
+    <label>
+        <input type="radio" name="role" value="Author">
+        <span>Author</span>
+      </label>
+    </div>
+    <div class="col s4">
+      <label>
+        <input type="radio" name="role" value="Editor">
+        <span>Editor</span>
+      </label>
+    </div>
+    <div class="col s4">
+      <label>
+        <input type="radio" name="role" value="Reviewer">
+        <span>Reviewer</span>
+      </label>
+    </div>
+    </div>
     <div onclick="loading()">
     <button  value="Upload" class="btn waves-effect waves-light" type="submit" name="submit">Register
       <i class="material-icons right">send</i>
