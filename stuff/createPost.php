@@ -127,12 +127,13 @@ echo $body;
                <div class="row">
                  <div class="col l6 s12">
                    <h5 class="white-text">Group2 Publication</h5>
-                   <p class="grey-text text-lighten-4">You can read more about this website </p><a href="https://github.com/Aldebaram/happiness-news" class="white-text underline" >Here</a>
+                   <p class="grey-text text-lighten-4">You can read more about this website </p><a href="https://github.com/khoaideptrai/Group2-Publication" class="white-text underline" >Here</a>
                  </div>
                  <div class="col l4 offset-l2 s12">
-                   <h5 class="white-text">My Github</h5>
+                  <h5 class="white-text">Member</h5>
                    <ul>
-                     <li><a class="grey-text text-lighten-3" href="https://github.com/Aldebaram">Aldebaram</a></li>
+                     <li><a class="grey-text text-lighten-3">Pham Khang Nguyen & Nguyen Han Manh Kiet</a></li>
+                     <li><a class="grey-text text-lighten-3">Le Ba Thong & Nguyen Anh Vi</a></li>
                    </ul>
                  </div>
                </div>

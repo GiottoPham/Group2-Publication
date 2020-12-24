@@ -80,10 +80,23 @@ $getUser = "SELECT user_id,login,avatar  FROM julio_users WHERE login='$user' AN
      </div>
    </nav>';
 
+   $adminlogbar = '<!-- Materialize Navbar -->
+  <nav class="callToFront">
+     <div class="nav-wrapper indigo">
+       <a href="../index.php" class="brand-logo left">Group2 Publication</a>
+       <ul id="nav-mobile" class="right ">
+         <li><a href="create.php">Create New!<i class="material-icons right">drafts</i></a></li>
+         <li><a href="logout.php">Logout<i class="material-icons right">info_outline</i></a></li>
+         <li><a href="register.php">New Account Register<i class="material-icons right">create</i></a></li>
+       </ul>
+     </div>
+   </nav>';
+
 
 
    if($_SESSION['login']==true){
-   echo $logbar; //shows the navbar if theres a user on session.
+     if ($user == 'Admin') echo $adminlogbar;
+     else echo $logbar; //shows the navbar if theres a user on session.
    }else{
     echo $unlogbar; //shows the bar is no user in session.
    }
@@ -156,12 +169,13 @@ echo "
                     <div class="row">
                       <div class="col l6 s12">
                         <h5 class="white-text">Group2 Publication</h5>
-                        <p class="grey-text text-lighten-4">You can read more about this website </p><a href="https://github.com/Aldebaram/happiness-news" class="white-text underline" >Here</a>
+                        <p class="grey-text text-lighten-4">You can read more about this website </p><a href="https://github.com/khoaideptrai/Group2-Publication" class="white-text underline" >Here</a>
                       </div>
                       <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">My Github</h5>
+                        <h5 class="white-text">Member</h5>
                         <ul>
-                          <li><a class="grey-text text-lighten-3" href="https://github.com/Aldebaram">Aldebaram</a></li>
+                          <li><a class="grey-text text-lighten-3">Pham Khang Nguyen & Nguyen Han Manh Kiet</a></li>
+                          <li><a class="grey-text text-lighten-3">Le Ba Thong & Nguyen Anh Vi</a></li>
                         </ul>
                       </div>
                     </div>

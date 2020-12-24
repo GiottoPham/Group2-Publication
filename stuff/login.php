@@ -3,6 +3,7 @@
 session_start();
 if(isset($_SESSION['login'])){
 if($_SESSION['login']==true){// check if user is logged
+  if ($_POST['user'] != 'Admin')
 header("location:../index.php");
 }else{
  // keep the flow
@@ -31,7 +32,6 @@ header("location:../index.php");
       <a href="../index.php" class="brand-logo left">Group2 Publication</a>
       <ul id="nav-mobile" class="right ">
         <li><a href="login.php">Login<i class="material-icons right">description</i></a></li>
-        <li><a href="register.php">Register<i class="material-icons right">create</i></a></li>
       </ul>
     </div>
   </nav>';
@@ -107,13 +107,14 @@ header("location:../index.php");
                     <div class="row">
                       <div class="col l6 s12">
                         <h5 class="white-text">Group2 Publication</h5>
-                        <p class="grey-text text-lighten-4">You can read more about this website </p><a href="https://github.com/Aldebaram/happiness-news" class="white-text underline" >Here</a>
+                        <p class="grey-text text-lighten-4">You can read more about this website </p><a href="https://github.com/khoaideptrai/Group2-Publication" class="white-text underline" >Here</a>
                       </div>
                       <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">My Github</h5>
-                        <ul>
-                          <li><a class="grey-text text-lighten-3" href="https://github.com/Aldebaram">Aldebaram</a></li>
-                        </ul>
+                        <h5 class="white-text">Member</h5>
+                          <ul>
+                            <li><a class="grey-text text-lighten-3">Pham Khang Nguyen & Nguyen Han Manh Kiet</a></li>
+                            <li><a class="grey-text text-lighten-3">Le Ba Thong & Nguyen Anh Vi</a></li>
+                          </ul>
                       </div>
                     </div>
                   </div>
